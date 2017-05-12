@@ -6,9 +6,9 @@
 //  Copyright © 2017 Fera Solutions. All rights reserved.
 //
 
-import Foundation
+import ObjectMapper
 
-class Repository
+class Repository: Mappable
 {
     // Properties
     var title: String = ""
@@ -17,9 +17,15 @@ class Repository
     // End Properties
     
     // Initializers
+    required init?(map: Map) {
+    }
     // End Initializers
     
     // Events
+    func mapping(map: Map) {
+        title <- map["name"]
+        stars <- map["stargazers_count"]
+    }
     // End Events
     
     // Methods

@@ -6,33 +6,36 @@
 //  Copyright © 2017 Fera Solutions. All rights reserved.
 //
 
-import Foundation
+import ObjectMapper
 
-class Issue
+class Issue: Mappable
 {
     // Properties
     var title: String = ""
     var author: String = ""
     var number: Int = 0
-    var state: IssueState = .open
+    var state: String = ""
     var createAt: Date = Date()
-    
-    enum IssueState {
-        case open
-        case closed
-    }
-    
     // End Properties
     
     // Initializers
+    required init?(map: Map) {
+    }
     // End Initializers
     
     // Events
+    func mapping(map: Map) {
+        title <- map["title"]
+        author <- map["user.login"]
+        number <- map["number"]
+        state <- map["state"]
+        createAt <- map["created_at"]
+    }
     // End Events
     
     // Methods
     func description() -> String {
-        return "#\(number) | \(state == .open ? "open" : "closed") | created \(age()) days ago by \(author)"
+        return "#\(number) | \(state) | created \(age()) days ago by \(author)"
     }
     
     func age() -> Int {

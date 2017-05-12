@@ -39,7 +39,7 @@ class RepoDetailViewController: UIViewController
             if let error = error {
                 print("error: \(error.localizedDescription)")
             } else {
-                showRepository(repository: repository)
+                self.showRepository(repository: repository!)
             }
         }
     }
@@ -52,7 +52,7 @@ class RepoDetailViewController: UIViewController
     
     func showRepository(repository: Repository) {
         titleLabel.text = repository.title
-        starsLabel.text = "\(repository.stars) start\(repository.stars != 1 ? "s" : "")"
+        starsLabel.text = "\(repository.stars) star\(repository.stars != 1 ? "s" : "")"
         
         if let body = repository.bodyHTML() {
             webView.loadHTMLString(body, baseURL: nil)

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2E7E2FFF85EB4875D9EEEB72 /* Pods_RepoDemoSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30B3F8A70676757EEC50236E /* Pods_RepoDemoSwift.framework */; };
 		FE4C75C61EC5E52600AE623F /* Issue.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4C75C41EC5E52600AE623F /* Issue.swift */; };
 		FE4C75C71EC5E52600AE623F /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4C75C51EC5E52600AE623F /* Repository.swift */; };
 		FE4C75C91EC5E56400AE623F /* RepositoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4C75C81EC5E56400AE623F /* RepositoryModel.swift */; };
@@ -14,6 +15,7 @@
 		FE4C75D51EC5F94700AE623F /* IssueListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4C75D11EC5F94700AE623F /* IssueListViewController.swift */; };
 		FE4C75D61EC5F94700AE623F /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4C75D31EC5F94700AE623F /* MainViewController.swift */; };
 		FE4C75D91EC6085500AE623F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4C75D81EC6085500AE623F /* Constants.swift */; };
+		FE4C75E11EC61EFD00AE623F /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = FE4C75E01EC61EFD00AE623F /* Podfile */; };
 		FEBCFB621EC54EEE00456CAB /* RepoDemoSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEBCFB611EC54EEE00456CAB /* RepoDemoSwiftTests.swift */; };
 		FEBCFB761EC5514A00456CAB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEBCFB6F1EC5514A00456CAB /* AppDelegate.swift */; };
 		FEBCFB771EC5514A00456CAB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FEBCFB721EC5514A00456CAB /* Assets.xcassets */; };
@@ -32,6 +34,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		30B3F8A70676757EEC50236E /* Pods_RepoDemoSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RepoDemoSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB9010E65D9BC0D26DC920D0 /* Pods-RepoDemoSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RepoDemoSwift.release.xcconfig"; path = "Pods/Target Support Files/Pods-RepoDemoSwift/Pods-RepoDemoSwift.release.xcconfig"; sourceTree = "<group>"; };
+		CBD68CAAA97FEB4B1DAA9F95 /* Pods-RepoDemoSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RepoDemoSwift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RepoDemoSwift/Pods-RepoDemoSwift.debug.xcconfig"; sourceTree = "<group>"; };
 		FE4C75C41EC5E52600AE623F /* Issue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Issue.swift; sourceTree = "<group>"; };
 		FE4C75C51EC5E52600AE623F /* Repository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
 		FE4C75C81EC5E56400AE623F /* RepositoryModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepositoryModel.swift; sourceTree = "<group>"; };
@@ -39,6 +44,7 @@
 		FE4C75D11EC5F94700AE623F /* IssueListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IssueListViewController.swift; sourceTree = "<group>"; };
 		FE4C75D31EC5F94700AE623F /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		FE4C75D81EC6085500AE623F /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		FE4C75E01EC61EFD00AE623F /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = SOURCE_ROOT; };
 		FEBCFB491EC54EEE00456CAB /* RepoDemoSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RepoDemoSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEBCFB581EC54EEE00456CAB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FEBCFB5D1EC54EEE00456CAB /* RepoDemoSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RepoDemoSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -55,6 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E7E2FFF85EB4875D9EEEB72 /* Pods_RepoDemoSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +75,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		209E71FC8C756C077DB2098A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CBD68CAAA97FEB4B1DAA9F95 /* Pods-RepoDemoSwift.debug.xcconfig */,
+				BB9010E65D9BC0D26DC920D0 /* Pods-RepoDemoSwift.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		69A43EC60FCCE08CB316CE95 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				30B3F8A70676757EEC50236E /* Pods_RepoDemoSwift.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		FE4C75BE1EC5DF2700AE623F /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -124,6 +148,8 @@
 				FEBCFB4B1EC54EEE00456CAB /* RepoDemoSwift */,
 				FEBCFB601EC54EEE00456CAB /* RepoDemoSwiftTests */,
 				FEBCFB4A1EC54EEE00456CAB /* Products */,
+				209E71FC8C756C077DB2098A /* Pods */,
+				69A43EC60FCCE08CB316CE95 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -163,6 +189,7 @@
 			isa = PBXGroup;
 			children = (
 				FEBCFB581EC54EEE00456CAB /* Info.plist */,
+				FE4C75E01EC61EFD00AE623F /* Podfile */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -209,9 +236,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FEBCFB661EC54EEE00456CAB /* Build configuration list for PBXNativeTarget "RepoDemoSwift" */;
 			buildPhases = (
+				111E011104CCFE3250237CE4 /* [CP] Check Pods Manifest.lock */,
 				FEBCFB451EC54EEE00456CAB /* Sources */,
 				FEBCFB461EC54EEE00456CAB /* Frameworks */,
 				FEBCFB471EC54EEE00456CAB /* Resources */,
+				01D3263E9B18F4ACD2E632F5 /* [CP] Embed Pods Frameworks */,
+				E224E832884D3AE21EE2A902 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -287,6 +317,7 @@
 			files = (
 				FEBCFB791EC5514A00456CAB /* Main.storyboard in Resources */,
 				FEBCFB771EC5514A00456CAB /* Assets.xcassets in Resources */,
+				FE4C75E11EC61EFD00AE623F /* Podfile in Resources */,
 				FEBCFB781EC5514A00456CAB /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -299,6 +330,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		01D3263E9B18F4ACD2E632F5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RepoDemoSwift/Pods-RepoDemoSwift-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		111E011104CCFE3250237CE4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E224E832884D3AE21EE2A902 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RepoDemoSwift/Pods-RepoDemoSwift-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		FEBCFB451EC54EEE00456CAB /* Sources */ = {
@@ -432,6 +511,7 @@
 		};
 		FEBCFB671EC54EEE00456CAB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CBD68CAAA97FEB4B1DAA9F95 /* Pods-RepoDemoSwift.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = RepoDemoSwift/Info.plist;
@@ -444,6 +524,7 @@
 		};
 		FEBCFB681EC54EEE00456CAB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BB9010E65D9BC0D26DC920D0 /* Pods-RepoDemoSwift.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = RepoDemoSwift/Info.plist;
