@@ -7,7 +7,6 @@
 //
 
 import Foundation
-import UIKit
 
 class RepositoryModel
 {
@@ -25,16 +24,16 @@ class RepositoryModel
     // End Events
     
     // Methods
-    func loadRepository(completion: (_ repository: Repository) -> ()) {
+    func loadRepository(completion: (_ error: Error?, _ repository: Repository) -> ()) {
         let repository = Repository()
         repository.title = "Repository title"
-        repository.stars = 5
+        repository.stars = 2
         repository.body = "This is a demo respository"
         
-        completion(repository)
+        completion(nil, repository)
     }
     
-    func loadIssues(completion: (_ issues: [Issue]) -> ()) {
+    func loadIssues(completion: (_ error: Error?, _ issues: [Issue]) -> ()) {
         let issue = Issue()
         issue.title = "Issue 1"
         issue.author = "Author 1"
@@ -47,7 +46,7 @@ class RepositoryModel
         issue2.state = .open
         issue2.createAt = Date().addingTimeInterval(1000000)
         
-        completion([issue, issue2])
+        completion(nil, [issue, issue2])
     }
     // End Methods
 }
