@@ -5,4 +5,5 @@ use_frameworks!
 target 'RepoDemoSwift' do
     pod 'Alamofire', '~>4.4'
     pod 'AlamofireObjectMapper', '~>4.1'
+    pod 'Down'
 end

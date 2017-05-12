@@ -16,6 +16,7 @@
 		FE4C75D61EC5F94700AE623F /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4C75D31EC5F94700AE623F /* MainViewController.swift */; };
 		FE4C75D91EC6085500AE623F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4C75D81EC6085500AE623F /* Constants.swift */; };
 		FE4C75E11EC61EFD00AE623F /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = FE4C75E01EC61EFD00AE623F /* Podfile */; };
+		FE4C75E31EC63DA800AE623F /* Readme.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4C75E21EC63DA800AE623F /* Readme.swift */; };
 		FEBCFB621EC54EEE00456CAB /* RepoDemoSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEBCFB611EC54EEE00456CAB /* RepoDemoSwiftTests.swift */; };
 		FEBCFB761EC5514A00456CAB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEBCFB6F1EC5514A00456CAB /* AppDelegate.swift */; };
 		FEBCFB771EC5514A00456CAB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FEBCFB721EC5514A00456CAB /* Assets.xcassets */; };
@@ -44,7 +45,8 @@
 		FE4C75D11EC5F94700AE623F /* IssueListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IssueListViewController.swift; sourceTree = "<group>"; };
 		FE4C75D31EC5F94700AE623F /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		FE4C75D81EC6085500AE623F /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		FE4C75E01EC61EFD00AE623F /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = SOURCE_ROOT; };
+		FE4C75E01EC61EFD00AE623F /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		FE4C75E21EC63DA800AE623F /* Readme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Readme.swift; sourceTree = "<group>"; };
 		FEBCFB491EC54EEE00456CAB /* RepoDemoSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RepoDemoSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEBCFB581EC54EEE00456CAB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FEBCFB5D1EC54EEE00456CAB /* RepoDemoSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RepoDemoSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -106,6 +108,7 @@
 			children = (
 				FE4C75C41EC5E52600AE623F /* Issue.swift */,
 				FE4C75C51EC5E52600AE623F /* Repository.swift */,
+				FE4C75E21EC63DA800AE623F /* Readme.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -391,6 +394,7 @@
 				FE4C75D51EC5F94700AE623F /* IssueListViewController.swift in Sources */,
 				FEBCFB761EC5514A00456CAB /* AppDelegate.swift in Sources */,
 				FE4C75C71EC5E52600AE623F /* Repository.swift in Sources */,
+				FE4C75E31EC63DA800AE623F /* Readme.swift in Sources */,
 				FE4C75D91EC6085500AE623F /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

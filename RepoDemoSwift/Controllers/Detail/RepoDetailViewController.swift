@@ -42,6 +42,16 @@ class RepoDetailViewController: UIViewController
                 self.showRepository(repository: repository!)
             }
         }
+        
+        repositoryModel.loadReadme { (error, readmeHtml) in
+            if let error = error {
+                print("error: \(error.localizedDescription)")
+            } else {
+                if let content = readmeHtml {
+                    self.showReadme(content: content)
+                }
+            }
+        }
     }
     
     func loadIssues(repositoryPath: String) {
@@ -53,10 +63,10 @@ class RepoDetailViewController: UIViewController
     func showRepository(repository: Repository) {
         titleLabel.text = repository.title
         starsLabel.text = "\(repository.stars) star\(repository.stars != 1 ? "s" : "")"
-        
-        if let body = repository.bodyHTML() {
-            webView.loadHTMLString(body, baseURL: nil)
-        }
+    }
+    
+    func showReadme(content: String) {
+        webView.loadHTMLString(content, baseURL: nil)
     }
     // End Methods
 }
