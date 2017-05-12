@@ -1,0 +1,448 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FEBCFB621EC54EEE00456CAB /* RepoDemoSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEBCFB611EC54EEE00456CAB /* RepoDemoSwiftTests.swift */; };
+		FEBCFB761EC5514A00456CAB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEBCFB6F1EC5514A00456CAB /* AppDelegate.swift */; };
+		FEBCFB771EC5514A00456CAB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FEBCFB721EC5514A00456CAB /* Assets.xcassets */; };
+		FEBCFB781EC5514A00456CAB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FEBCFB741EC5514A00456CAB /* LaunchScreen.storyboard */; };
+		FEBCFB791EC5514A00456CAB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FEBCFB751EC5514A00456CAB /* Main.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FEBCFB5E1EC54EEE00456CAB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FEBCFB411EC54EEE00456CAB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FEBCFB481EC54EEE00456CAB;
+			remoteInfo = RepoDemoSwift;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FEBCFB491EC54EEE00456CAB /* RepoDemoSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RepoDemoSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FEBCFB581EC54EEE00456CAB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FEBCFB5D1EC54EEE00456CAB /* RepoDemoSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RepoDemoSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FEBCFB611EC54EEE00456CAB /* RepoDemoSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoDemoSwiftTests.swift; sourceTree = "<group>"; };
+		FEBCFB631EC54EEE00456CAB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FEBCFB6F1EC5514A00456CAB /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FEBCFB721EC5514A00456CAB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FEBCFB741EC5514A00456CAB /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FEBCFB751EC5514A00456CAB /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FEBCFB461EC54EEE00456CAB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FEBCFB5A1EC54EEE00456CAB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FEBCFB401EC54EEE00456CAB = {
+			isa = PBXGroup;
+			children = (
+				FEBCFB4B1EC54EEE00456CAB /* RepoDemoSwift */,
+				FEBCFB601EC54EEE00456CAB /* RepoDemoSwiftTests */,
+				FEBCFB4A1EC54EEE00456CAB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FEBCFB4A1EC54EEE00456CAB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FEBCFB491EC54EEE00456CAB /* RepoDemoSwift.app */,
+				FEBCFB5D1EC54EEE00456CAB /* RepoDemoSwiftTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FEBCFB4B1EC54EEE00456CAB /* RepoDemoSwift */ = {
+			isa = PBXGroup;
+			children = (
+				FEBCFB6E1EC5514A00456CAB /* Delegate */,
+				FEBCFB6D1EC5514A00456CAB /* Controllers */,
+				FEBCFB731EC5514A00456CAB /* Views */,
+				FEBCFB701EC5514A00456CAB /* Model */,
+				FEBCFB711EC5514A00456CAB /* Resources */,
+				FEBCFB6C1EC5512000456CAB /* Supporting Files */,
+			);
+			path = RepoDemoSwift;
+			sourceTree = "<group>";
+		};
+		FEBCFB601EC54EEE00456CAB /* RepoDemoSwiftTests */ = {
+			isa = PBXGroup;
+			children = (
+				FEBCFB611EC54EEE00456CAB /* RepoDemoSwiftTests.swift */,
+				FEBCFB631EC54EEE00456CAB /* Info.plist */,
+			);
+			path = RepoDemoSwiftTests;
+			sourceTree = "<group>";
+		};
+		FEBCFB6C1EC5512000456CAB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FEBCFB581EC54EEE00456CAB /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FEBCFB6D1EC5514A00456CAB /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		FEBCFB6E1EC5514A00456CAB /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				FEBCFB6F1EC5514A00456CAB /* AppDelegate.swift */,
+			);
+			path = Delegate;
+			sourceTree = "<group>";
+		};
+		FEBCFB701EC5514A00456CAB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FEBCFB711EC5514A00456CAB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FEBCFB721EC5514A00456CAB /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		FEBCFB731EC5514A00456CAB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FEBCFB741EC5514A00456CAB /* LaunchScreen.storyboard */,
+				FEBCFB751EC5514A00456CAB /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FEBCFB481EC54EEE00456CAB /* RepoDemoSwift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FEBCFB661EC54EEE00456CAB /* Build configuration list for PBXNativeTarget "RepoDemoSwift" */;
+			buildPhases = (
+				FEBCFB451EC54EEE00456CAB /* Sources */,
+				FEBCFB461EC54EEE00456CAB /* Frameworks */,
+				FEBCFB471EC54EEE00456CAB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RepoDemoSwift;
+			productName = RepoDemoSwift;
+			productReference = FEBCFB491EC54EEE00456CAB /* RepoDemoSwift.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FEBCFB5C1EC54EEE00456CAB /* RepoDemoSwiftTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FEBCFB691EC54EEE00456CAB /* Build configuration list for PBXNativeTarget "RepoDemoSwiftTests" */;
+			buildPhases = (
+				FEBCFB591EC54EEE00456CAB /* Sources */,
+				FEBCFB5A1EC54EEE00456CAB /* Frameworks */,
+				FEBCFB5B1EC54EEE00456CAB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FEBCFB5F1EC54EEE00456CAB /* PBXTargetDependency */,
+			);
+			name = RepoDemoSwiftTests;
+			productName = RepoDemoSwiftTests;
+			productReference = FEBCFB5D1EC54EEE00456CAB /* RepoDemoSwiftTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FEBCFB411EC54EEE00456CAB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Fera Solutions";
+				TargetAttributes = {
+					FEBCFB481EC54EEE00456CAB = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+					};
+					FEBCFB5C1EC54EEE00456CAB = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = FEBCFB481EC54EEE00456CAB;
+					};
+				};
+			};
+			buildConfigurationList = FEBCFB441EC54EEE00456CAB /* Build configuration list for PBXProject "RepoDemoSwift" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FEBCFB401EC54EEE00456CAB;
+			productRefGroup = FEBCFB4A1EC54EEE00456CAB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FEBCFB481EC54EEE00456CAB /* RepoDemoSwift */,
+				FEBCFB5C1EC54EEE00456CAB /* RepoDemoSwiftTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FEBCFB471EC54EEE00456CAB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FEBCFB791EC5514A00456CAB /* Main.storyboard in Resources */,
+				FEBCFB771EC5514A00456CAB /* Assets.xcassets in Resources */,
+				FEBCFB781EC5514A00456CAB /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FEBCFB5B1EC54EEE00456CAB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FEBCFB451EC54EEE00456CAB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FEBCFB761EC5514A00456CAB /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FEBCFB591EC54EEE00456CAB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FEBCFB621EC54EEE00456CAB /* RepoDemoSwiftTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FEBCFB5F1EC54EEE00456CAB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FEBCFB481EC54EEE00456CAB /* RepoDemoSwift */;
+			targetProxy = FEBCFB5E1EC54EEE00456CAB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		FEBCFB641EC54EEE00456CAB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		FEBCFB651EC54EEE00456CAB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FEBCFB671EC54EEE00456CAB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = RepoDemoSwift/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.ferasolutions.RepoDemoSwift;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		FEBCFB681EC54EEE00456CAB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = RepoDemoSwift/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.ferasolutions.RepoDemoSwift;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		FEBCFB6A1EC54EEE00456CAB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = RepoDemoSwiftTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.ferasolutions.RepoDemoSwiftTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RepoDemoSwift.app/RepoDemoSwift";
+			};
+			name = Debug;
+		};
+		FEBCFB6B1EC54EEE00456CAB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = RepoDemoSwiftTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.ferasolutions.RepoDemoSwiftTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RepoDemoSwift.app/RepoDemoSwift";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FEBCFB441EC54EEE00456CAB /* Build configuration list for PBXProject "RepoDemoSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FEBCFB641EC54EEE00456CAB /* Debug */,
+				FEBCFB651EC54EEE00456CAB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FEBCFB661EC54EEE00456CAB /* Build configuration list for PBXNativeTarget "RepoDemoSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FEBCFB671EC54EEE00456CAB /* Debug */,
+				FEBCFB681EC54EEE00456CAB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		FEBCFB691EC54EEE00456CAB /* Build configuration list for PBXNativeTarget "RepoDemoSwiftTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FEBCFB6A1EC54EEE00456CAB /* Debug */,
+				FEBCFB6B1EC54EEE00456CAB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FEBCFB411EC54EEE00456CAB /* Project object */;
+}
