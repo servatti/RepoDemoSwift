@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class IssueListViewController: UIViewController,
+class IssueListViewController: BaseViewController,
                                UITableViewDelegate,
                                UITableViewDataSource
 {
@@ -32,9 +32,14 @@ class IssueListViewController: UIViewController,
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        setup()
+        
         // Add observer to be notified when user tap Load Repository button
-        let notificationName = Notification.Name(Constants.NotificationLoadIssues)
-        NotificationCenter.default.addObserver(self, selector: #selector(loadIssuesNotification(notification:)), name: notificationName, object: nil)
+        let notificationNameLoad = Notification.Name(Constants.NotificationLoadIssues)
+        NotificationCenter.default.addObserver(self, selector: #selector(loadIssuesNotification(notification:)), name: notificationNameLoad , object: nil)
+        
+        let notificationNameClear = Notification.Name(Constants.NotificationClearIssues)
+        NotificationCenter.default.addObserver(self, selector: #selector(clear), name: notificationNameClear, object: nil)
     }
     
     // MARK: UITableViewDelegate
@@ -67,12 +72,13 @@ class IssueListViewController: UIViewController,
     // Methods
     func loadIssuesNotification(notification: Notification) {
         let repositoryPath = notification.object as! String
+        let repositoryModel = RepositoryModel(repositoryPath: repositoryPath)
         
-        loadIssues(repositoryPath: repositoryPath)
+        loadIssues(repositoryModel: repositoryModel)
     }
     
-    func loadIssues(repositoryPath: String) {
-        let repositoryModel = RepositoryModel(repositoryPath: repositoryPath)
+    func loadIssues(repositoryModel: RepositoryModel) {
+        showLoading(show: true)
         
         repositoryModel.loadIssues { [unowned self] (error, issues) in
             if let error = error {
@@ -80,6 +86,8 @@ class IssueListViewController: UIViewController,
             } else {
                 self.showIssues(issues: issues)
             }
+            
+            self.showLoading(show: false)
         }
     }
     
@@ -93,6 +101,16 @@ class IssueListViewController: UIViewController,
         if (UIApplication.shared.canOpenURL(url)) {
             UIApplication.shared.open(url, options: [:], completionHandler: nil);
         }
+    }
+    
+    func clear() {
+        issues = nil
+        tableView.reloadData()
+    }
+    
+    func setup() {
+        tableView.rowHeight = UITableViewAutomaticDimension
+        tableView.estimatedRowHeight = 57
     }
     // End Methods
 }

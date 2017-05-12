@@ -8,5 +8,6 @@
 
 enum Constants {
     static let NotificationLoadIssues = "NotificationLoadIssues"
+    static let NotificationClearIssues = "NotificationClearIssues"
     static let GitHubApiBaseUrl = "https://api.github.com/repos"
 }
