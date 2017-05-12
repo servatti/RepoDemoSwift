@@ -16,6 +16,7 @@ class Issue: Mappable
     var number: Int = 0
     var state: String = ""
     var createAt: Date = Date()
+    var url: String = ""
     // End Properties
     
     // Initializers
@@ -29,17 +30,27 @@ class Issue: Mappable
         author <- map["user.login"]
         number <- map["number"]
         state <- map["state"]
-        createAt <- map["created_at"]
+        createAt <- (map["created_at"], ISO8601DateTransform())
+        url <- map["html_url"]
     }
     // End Events
     
     // Methods
     func description() -> String {
-        return "#\(number) | \(state) | created \(age()) days ago by \(author)"
+        var time = ""
+        let hours = Date().timeIntervalSince(createAt) / 3600
+        
+        if (hours < 24) {
+            time = "\(Int(hours)) hours"
+        } else {
+            time = "\(Int(hours / 24)) days"
+        }
+        
+        return "#\(number) | \(state) | created \(time) ago by \(author)"
     }
     
-    func age() -> Int {
-        return 99
+    func issueUrl() -> URL {
+        return URL(string: url)!
     }
     // End Methods
 }

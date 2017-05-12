@@ -56,6 +56,12 @@ class IssueListViewController: UIViewController,
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return issues?.count ?? 0;
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let issue = issues![indexPath.row]
+        
+        openIssueUrl(url: issue.issueUrl())
+    }
     // End Events
     
     // Methods
@@ -81,6 +87,12 @@ class IssueListViewController: UIViewController,
         self.issues = issues
         
         tableView.reloadData()
+    }
+    
+    func openIssueUrl(url: URL) {
+        if (UIApplication.shared.canOpenURL(url)) {
+            UIApplication.shared.open(url, options: [:], completionHandler: nil);
+        }
     }
     // End Methods
 }
