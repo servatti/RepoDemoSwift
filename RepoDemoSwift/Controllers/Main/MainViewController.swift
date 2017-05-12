@@ -1,5 +1,5 @@
 //
-//  RootViewController.swift
+//  MainViewController.swift
 //  RepoDemoSwift
 //
 //  Created by Rafael Servatti on 5/11/17.
@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class RootViewController: UISplitViewController
+class MainViewController: UISplitViewController
 {
     // Properties
     // End Properties
