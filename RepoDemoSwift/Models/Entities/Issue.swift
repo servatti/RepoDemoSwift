@@ -31,6 +31,10 @@ class Issue
     // End Events
     
     // Methods
+    func description() -> String {
+        return "#\(number) | \(state == .open ? "open" : "closed") | created \(age()) days ago by \(author)"
+    }
+    
     func age() -> Int {
         return 99
     }

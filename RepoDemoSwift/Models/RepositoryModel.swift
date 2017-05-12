@@ -35,7 +35,7 @@ class RepositoryModel
     
     func loadIssues(completion: (_ error: Error?, _ issues: [Issue]) -> ()) {
         let issue = Issue()
-        issue.title = "Issue 1"
+        issue.title = "Issue 1 Issue 1 Issue 1 Issue 1 Issue 1 Issue 1 Issue 1 Issue 1"
         issue.author = "Author 1"
         issue.state = .closed
         issue.createAt = Date()

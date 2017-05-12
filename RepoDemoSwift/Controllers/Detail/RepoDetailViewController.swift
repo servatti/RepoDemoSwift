@@ -23,13 +23,17 @@ class RepoDetailViewController: UIViewController
     
     // Events
     @IBAction func loadRepositoryDidTap(sender: UIButton) {
-        loadRepository(repository: repositoryTextField.text!)
+        loadRepository(repositoryPath: repositoryTextField.text!)
+    }
+    
+    @IBAction func loadIssuesDidTap(sender: UIButton) {
+        loadIssues(repositoryPath: repositoryTextField.text!)
     }
     // End Events
     
     // Methods
-    func loadRepository(repository: String) {
-        let repositoryModel = RepositoryModel(repositoryPath: repository)
+    func loadRepository(repositoryPath: String) {
+        let repositoryModel = RepositoryModel(repositoryPath: repositoryPath)
         
         repositoryModel.loadRepository { (error, repository) in
             if let error = error {
@@ -38,6 +42,12 @@ class RepoDetailViewController: UIViewController
                 showRepository(repository: repository)
             }
         }
+    }
+    
+    func loadIssues(repositoryPath: String) {
+        // Post notification with repository path
+        let notificationName = Notification.Name(Constants.NotificationLoadIssues)
+        NotificationCenter.default.post(name: notificationName, object: repositoryPath)
     }
     
     func showRepository(repository: Repository) {
